@@ -9,7 +9,7 @@ void QuickSort(int arr[], int First, int Last){
 
     if(First <  Last){
 
-        int j =  makePart(arr, First, Last);
+        int j =  makePart(arr, First, Last);  //j IS THE PIVOT FOR THE PARTATION SYSTEM OF THIS ALGORITHM 
            
         QuickSort(arr, First, j-1);
         QuickSort(arr, j+1, Last);
@@ -29,7 +29,7 @@ int makePart(int arr[], int First, int Last){
         {
             i++;
 
-        } while (pivot > arr[i]);
+        } while (pivot > arr[i]);       
 
         do
         {
@@ -48,7 +48,7 @@ int makePart(int arr[], int First, int Last){
     arr[First] = arr[j];
     arr[j] = pivot;
     
-    return j;
+    return j;       // THIS FUNCITON WILL RETURN PIVOT j
 
 }
 
@@ -124,4 +124,5 @@ int main(){
     
     return 0;
 }
+
 
