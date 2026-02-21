@@ -96,7 +96,7 @@ int main(){
 
     for (int i = 0; i < n; i++)
     {
-        arr[i] = rand() % 100;
+        arr[i] = rand() % 100; // ALL THE RANDOM NUMBERS WILL BE IN 100 BECOUSE OF %100
     }
     
     cout<< "\n ~~~~ The UNSORTED ARRAY ~~~~~ \n";
@@ -124,3 +124,4 @@ int main(){
     
     return 0;
 }
+
