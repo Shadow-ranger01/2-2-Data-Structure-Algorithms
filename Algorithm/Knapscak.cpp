@@ -39,7 +39,7 @@ int main(){
              << " is : " << items[i].ppw << endl;
     }
 
-    // Correct sort
+
     sort(items, items + n, compare);
 
     float Profit = 0;
