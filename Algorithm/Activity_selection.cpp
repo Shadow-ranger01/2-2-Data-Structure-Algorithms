@@ -23,16 +23,13 @@ int main() {
         cin >> act[i].start >> act[i].finish;
     }
 
-    // Sort activities by finish time
     sort(act, act + n, compare);
 
     cout << "\nSelected Activities:\n";
 
-    // First activity is always selected
     int i = 0, Count = 0;
     cout << "Activity 1: (" << act[i].start << ", " << act[i].finish << ")\n";
 
-    // Select rest
     for (int j = 1; j < n; j++) {
         if (act[j].start >= act[i].finish) {
             Count++;
