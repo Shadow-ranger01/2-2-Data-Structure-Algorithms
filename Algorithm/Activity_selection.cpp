@@ -2,12 +2,10 @@
 #include <algorithm>
 using namespace std;
 
-// Structure to store activity
 struct Activity {
     int start, finish;
 };
 
-// Compare function (sort by finish time)
 bool compare(Activity a, Activity b) {
     return a.finish < b.finish;
 }
