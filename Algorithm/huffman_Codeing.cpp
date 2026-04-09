@@ -1,7 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-// Structure to represent a node in the Huffman Tree
 struct item {
     char ch;
     int f;
@@ -15,7 +14,7 @@ struct item {
     }
 };
 
-// Comparator for priority queue (min heap)
+// (min heap)
 struct compare {
     bool operator()(item* left, item* right) {
         return left->f > right->f;
