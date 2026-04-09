@@ -58,7 +58,7 @@ int main() {
 
     cout << "\n--- Building Huffman Tree ---\n";
 
-    // Build Huffman Tree
+    // Huffman Tree
     while (q.size() > 1) {
         item *i1 = q.top(); q.pop();
         item *i2 = q.top(); q.pop();
